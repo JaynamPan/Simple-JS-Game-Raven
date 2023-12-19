@@ -23,6 +23,13 @@ let ravens = []
 let score = 0;
 ctx.font = "50px Impact";
 
+document.addEventListener("DOMContentLoaded",function(){
+    var preLoadImage=new Image();
+    preLoadImage.src="./boom.png";
+    var preLoadAudio=new Audio();
+    preLoadAudio.src="./boom.wav";
+});
+
 window.addEventListener("load", function () {
     class Raven {
         constructor() {
